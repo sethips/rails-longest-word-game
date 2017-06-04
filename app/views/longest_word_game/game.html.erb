@@ -1,0 +1,20 @@
+<h1>LongestWordGame#game</h1>
+<p>Find me in app/views/longest_word_game/game.html.erb</p>
+
+<p>******** Welcome to the longest word-game !********</<p></p>>
+<p>Here is your grid :</p>
+<h2> <%= @grid.join(' ') %> </h2>
+
+<p>*****************************************************</p>
+
+<p>What's your best shot ?</p>
+
+<% @start_time %>
+
+<form action="/score">
+  <label for="attempt">Hit us with your best shot!</label>
+  <input type="text" id="attempt" name="query" placeholder="longestword">
+  <input type="submit" value="Go on!">
+</form>
+
+<% @end_time %>

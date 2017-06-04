@@ -1,0 +1,17 @@
+<h1>LongestWordGame#score</h1>
+<p>Find me in app/views/longest_word_game/score.html.erb</p>
+
+<p>******************** Now your result *******************</p>
+
+<% result = @result %>
+
+
+<p>Your word: <%= @attempt %> </p>
+<p>Time Taken to answer: <%= result[:time] %> </p>
+<p>Translation: <%= result[:translation] %> </p>
+<p>Your score: <%= result[:score] %> </p>
+<p>Message:  <%= result[:message] %> </p>
+
+<p>*****************************************************</p>
+
+<a href="/game">Play again</a>
